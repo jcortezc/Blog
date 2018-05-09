@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap4/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap4/js/bootstrap.min.js' %}"></script>
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4">El blog de Josesin</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloribus eos magni molestiae non perferendis quae quas temporibus. Blanditiis consequatur corporis dolorem et fugiat minima, natus placeat praesentium quis voluptatum.</p>
+        </div>
+
+        {% block main %}{% endblock main %}
+    </div>
+</body>
+</html>
